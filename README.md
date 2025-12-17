@@ -18,7 +18,7 @@ This example contains the reception of messages from the automatic Referee and t
 ## Clonning
 
 ```shell
-git clone --recurse-submodules https://github.com/VSSSLeague/FIRAClient.git
+git clone --recurse-submodules https://github.com/PedroGilo12/VSSSClient-RAS-UFAL.git
 git submodule update --init
 ```
 
@@ -29,7 +29,7 @@ So, after this, run the command `make` and if everything goes ok, the binary wil
 ```shell
 mkdir build
 cd build
-qmake ..
+cmake ..
 make
 ```
 
