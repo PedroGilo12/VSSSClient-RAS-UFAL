@@ -2,6 +2,29 @@
 
 Este repositório tem como objetivo fornecer um roteiro para a configuração do ambiente de desenvolvimento de aplicações para competições de **Futebol de Tamanho Muito Pequeno (VSSS)**. Ele também serve como um repositório centralizado para algoritmos, exemplos e implementações de referência que podem ser reutilizados e ampliados em projetos VSSS.
 
+## Table of Contents
+
+- [FIRAClient RAS UFAL](#firaclient-ras-ufal)
+- [Environment Workflow](#environment-workflow)
+- [Behaviour Tree](#behaviour-tree)
+- [Environment Setup](#environment-setup)
+  - [Requirements](#requirements)
+    - [Install base dependencies](#install-base-dependencies)
+    - [Install Google Protocol Buffers](#install-google-protocol-buffers)
+  - [FIRASim](#firasim)
+    - [Installation](#installation)
+    - [Run FIRASim](#run-firasim)
+  - [VSSReferee](#vssreferee)
+    - [Installation](#installation-1)
+    - [Run VSSReferee](#run-vssreferee)
+  - [Groot2](#groot2)
+    - [Installation (precompiled installer)](#installation-precompiled-installer)
+  - [BehaviourTree.CPP](#behaviortreecpp)
+    - [Installation from source](#installation-from-source)
+    - [Verify installation](#verify-installation)
+- [Clonning](#clonning)
+- [Compilation](#compilation)
+
 ## Environment Workflow 
 
 - **FIRASim**: Environment simulator used to run and test VSSS league matches, providing the field, robots, and the physical dynamics of the game.
@@ -167,3 +190,20 @@ $ sudo make install
 ```bash
 $ pkg-config --modversion behaviortree_cpp
 ```
+
+## Clonning
+
+```shell
+git clone --recurse-submodules https://github.com/PedroGilo12/VSSSClient-RAS-UFAL.git
+git submodule update --init
+```
+
+## Compilation
+Create an folder named `build`, open it and run the command `qmake ..`  
+So, after this, run the command `make` and if everything goes ok, the binary will be at the folder `bin` (at the main folder).  
+
+```shell
+mkdir build
+cd build
+cmake ..
+make
