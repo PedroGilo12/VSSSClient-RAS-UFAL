@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="Untitled">
+    <Fallback>
+      <Sequence>
+        <IsAtack/>
+        <Defense/>
+      </Sequence>
+      <Atack/>
+    </Fallback>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot) -->
+  <TreeNodesModel>
+    <Action ID="Atack"
+            editable="true"/>
+    <Action ID="Defense"
+            editable="true"/>
+    <Action ID="IsAtack"
+            editable="true"/>
+  </TreeNodesModel>
+
+</root>

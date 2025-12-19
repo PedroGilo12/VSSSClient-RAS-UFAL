@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" project_name="Project">
+    <include path="basic_bht.xml"/>
+    <!-- Description of Node Models (used by Groot) -->
+    <TreeNodesModel>
+        <Action ID="Atack" editable="true"/>
+        <Action ID="Defense" editable="true"/>
+        <Action ID="Initialize" editable="true"/>
+        <Action ID="IsAtack" editable="true"/>
+    </TreeNodesModel>
+</root>
